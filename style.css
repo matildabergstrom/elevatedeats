@@ -264,6 +264,8 @@ html, body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow:hidden;
+  width: 100%;
 }
  
  .start img{
@@ -277,28 +279,29 @@ html, body {
   background-image: url('https://anestisxasapotaverna.gr/wp-content/uploads/2021/12/ARTICLE-1.jpg');
   height: 100%;
  }
- 
- .info{
-  background-image: url('https://dms-cf-10.dimu.org/image/012uP1bEbQxa?dimension=1200x1200');
-  background-repeat: no-repeat;
-  background-size: cover;
- }
-
- .info p{
-  padding-bottom: 60vh;
-  margin-left: 20vh;
-  margin-right: 20vh;
-  margin-top: 3vh;
- }
- .info h2{
-  padding-top: 5vh;
- }
 
  .textbackground{
   text-align: center;
   font-size: 2.4em;
   background-color: #e7e6dc;
+  position: relative;
  }
+
+ .infotext{
+  text-align: center;
+  font-size: 2.4em;
+  background-color: #e7e6dc;
+  padding: 10%;
+ }
+
+ .textbackground h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
  .infoimage{
   width: 100%;
   margin: 0;
@@ -308,6 +311,21 @@ html, body {
  .start img{
   width: 100%;
   margin: 5vh;
+ }
+
+ .textbackground{
+  position: static;
+ }
+
+ .textbackground h2{
+  position: static;
+  top: unset;
+  left: unset;
+  transform: unset;
+ }
+
+ .start{
+  background-size: cover;
  }
   }
  
